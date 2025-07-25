@@ -3,159 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoongleMedia - Social Media Platform</title>
+    <title>BoongleMedia - Under Maintenance</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
+    <div class="container">
+        <header>
             <div class="logo">
                 <h1>BoongleMedia</h1>
             </div>
-            <nav class="nav">
-                <a href="#features">Features</a>
-                <a href="#posting">Posting</a>
-                <a href="#community">Community</a>
-                <a href="#about">About</a>
-            </nav>
-        </div>
-    </header>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="maintenance-badge">
-                    <span>🚧 Under Maintenance</span>
+        <main>
+            <section class="hero">
+                <div class="maintenance-banner">
+                    <h2>🚧 Under Maintenance 🚧</h2>
+                    <p>We're working hard to bring you the best social media experience!</p>
                 </div>
-                <h1>Welcome to BoongleMedia</h1>
-                <p class="hero-subtitle">Want to help us building this amazing social media platform?</p>
-                <p class="hero-bonus">You will also get free Premium Subscription!</p>
                 
-                <div class="join-team-section">
-                    <button id="joinTeamBtn" class="join-btn">Join Team</button>
+                <div class="join-section">
+                    <h3>Want to help us building this amazing social media platform?</h3>
+                    <p>You will also get free Premium Subscription!</p>
                     
-                    <div id="joinTeamModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h3>Join Our Team</h3>
-                            <p>Enter your email address, where we can contact you.</p>
-                            <form id="joinTeamForm">
-                                <input type="email" id="emailInput" placeholder="your@email.com" required>
-                                <button type="submit">Submit</button>
-                            </form>
-                            <div id="cooldownMessage" class="cooldown-message"></div>
-                        </div>
+                    <div class="join-form">
+                        <input type="email" id="emailInput" placeholder="Enter your email address, where we can contact you." />
+                        <button id="joinBtn" onclick="joinTeam()">Join Team</button>
+                    </div>
+                    <div id="message" class="message"></div>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2>Features Coming Soon</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>📱 Social Posting</h3>
+                        <p>Share your thoughts, photos, and videos with the world</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>👥 Connect with Friends</h3>
+                        <p>Find and connect with people who share your interests</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💬 Real-time Chat</h3>
+                        <p>Instant messaging with your friends and followers</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔥 Trending Topics</h3>
+                        <p>Stay updated with what's happening around the world</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Mobile First</h3>
-                    <p>Optimized for all devices with responsive design</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Privacy Focused</h3>
-                    <p>Your data is secure with end-to-end encryption</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Lightning Fast</h3>
-                    <p>Real-time updates and instant messaging</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Customizable</h3>
-                    <p>Personalize your profile and feed experience</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Posting Section -->
-    <section id="posting" class="posting">
-        <div class="container">
-            <h2>Posting & Sharing</h2>
-            <div class="posting-content">
-                <div class="posting-text">
-                    <h3>Share Your World</h3>
-                    <ul>
-                        <li>📸 Photo & Video Posts</li>
-                        <li>📝 Text Updates</li>
-                        <li>🎵 Music & Audio</li>
-                        <li>📊 Polls & Surveys</li>
-                        <li>🔗 Link Sharing</li>
-                        <li>📍 Location Check-ins</li>
-                    </ul>
-                </div>
+            <section class="posting">
+                <h2>Posting Made Easy</h2>
                 <div class="posting-preview">
-                    <div class="mock-post">
+                    <div class="post-mockup">
                         <div class="post-header">
                             <div class="avatar"></div>
-                            <div class="post-info">
-                                <h4>@ooiaa_cat_lower</h4>
-                                <span>2 hours ago</span>
+                            <div class="user-info">
+                                <h4>Mr Josef</h4>
+                                <span>@josef2007</span>
                             </div>
                         </div>
                         <div class="post-content">
-                            <p>Just joined BoongleMedia! Excited to be part of this amazing community 🚀</p>
+                            <p>Share your thoughts with the world! 🌍</p>
                         </div>
                         <div class="post-actions">
-                            <button>❤️ Like</button>
-                            <button>💬 Comment</button>
-                            <button>🔄 Share</button>
+                            <span>❤️ Like</span>
+                            <span>💬 Comment</span>
+                            <span>🔄 Share</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Community Section -->
-    <section id="community" class="community">
-        <div class="container">
-            <h2>Community</h2>
-            <div class="community-grid">
-                <div class="community-card">
-                    <h3>Groups</h3>
-                    <p>Join communities based on your interests</p>
+            <section class="community">
+                <h2>Join Our Growing Community</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>10K+</h3>
+                        <p>Early Supporters</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Countries</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Community Support</p>
+                    </div>
                 </div>
-                <div class="community-card">
-                    <h3>Events</h3>
-                    <p>Discover and create events in your area</p>
-                </div>
-                <div class="community-card">
-                    <h3>Marketplace</h3>
-                    <p>Buy and sell items with your community</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        </main>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About BoongleMedia</h2>
-            <p>We're building the next generation social media platform that puts users first. Join us in creating a space where authentic connections thrive and creativity flourishes.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+        <footer>
             <p>&copy; 2025 BoongleMedia. All rights reserved.</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

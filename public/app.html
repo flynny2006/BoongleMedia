@@ -4,56 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoongleMedia - App</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app-styles.css">
 </head>
 <body>
-    <!-- Header with Search Bar -->
-    <header class="app-header">
-        <div class="header-content">
-            <div class="logo">
-                <h1>BoongleMedia</h1>
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <h2 id="authTitle">Welcome to BoongleMedia</h2>
+            
+            <!-- Login Form -->
+            <div id="loginForm" class="auth-form">
+                <h3>Login</h3>
+                <input type="text" id="loginUsername" placeholder="Username or Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button onclick="login()">Login</button>
+                <p>Don't have an account? <a href="#" onclick="showRegister()">Sign up</a></p>
             </div>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search BoongleMedia..." class="search-bar">
-                <button class="search-btn">🔍</button>
+            
+            <!-- Register Form -->
+            <div id="registerForm" class="auth-form" style="display: none;">
+                <h3>Sign Up</h3>
+                <input type="text" id="regUsername" placeholder="Username" required>
+                <input type="email" id="regEmail" placeholder="Email" required>
+                <input type="password" id="regPassword" placeholder="Password" required>
+                <button onclick="register()">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
             </div>
-            <div class="user-menu">
-                <span id="username"></span>
-                <button id="logoutBtn" class="logout-btn">Logout</button>
-            </div>
+            
+            <div id="authMessage" class="message"></div>
         </div>
-    </header>
-
-    <!-- Main Content Area -->
-    <div class="app-container">
-        <!-- Left Sidebar -->
-        <aside class="sidebar">
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="#" class="nav-item active">🏠 Home</a></li>
-                    <li><a href="#" class="nav-item">👤 Profile</a></li>
-                    <li><a href="#" class="nav-item">💬 Messages</a></li>
-                    <li><a href="#" class="nav-item">🔔 Notifications</a></li>
-                    <li><a href="#" class="nav-item">👥 Friends</a></li>
-                    <li><a href="#" class="nav-item">📱 Groups</a></li>
-                    <li><a href="#" class="nav-item">📅 Events</a></li>
-                    <li><a href="#" class="nav-item">🛒 Marketplace</a></li>
-                    <li><a href="#" class="nav-item">⚙️ Settings</a></li>
-                </ul>
-            </nav>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <div class="content-area">
-                <div class="no-content">
-                    <h2>No Content</h2>
-                    <p>This area will be populated with posts and content soon!</p>
+    </div>
+    
+    <!-- Main App -->
+    <div id="mainApp" style="display: none;">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>BoongleMedia</h1>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchBar" placeholder="Search BoongleMedia..." />
+                    <button class="search-btn">🔍</button>
+                </div>
+                <div class="user-menu">
+                    <span id="welcomeUser"></span>
+                    <button onclick="logout()" class="logout-btn">Logout</button>
                 </div>
             </div>
-        </main>
+        </header>
+        
+        <div class="app-container">
+            <aside class="sidebar">
+                <nav class="nav-menu">
+                    <div class="nav-item active">
+                        <span class="nav-icon">🏠</span>
+                        <span>Home</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">🔍</span>
+                        <span>Explore</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">🔔</span>
+                        <span>Notifications</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">💬</span>
+                        <span>Messages</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">👤</span>
+                        <span>Profile</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">⚙️</span>
+                        <span>Settings</span>
+                    </div>
+                </nav>
+            </aside>
+            
+            <main class="main-content">
+                <div class="no-content">
+                    <h2>No Content</h2>
+                    <p>Welcome to BoongleMedia! Content features are coming soon.</p>
+                </div>
+            </main>
+        </div>
     </div>
-
-    <script src="app.js"></script>
+    
+    <script src="app-script.js"></script>
 </body>
 </html>

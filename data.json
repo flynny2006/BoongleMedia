@@ -1,12 +1,17 @@
 {
-  "joinTeam": [],
+  "joinRequests": [
+    {
+      "email": "kovacskevin0824@gmail.com",
+      "timestamp": "2025-07-25T11:41:16.125Z"
+    }
+  ],
   "users": [
     {
-      "id": "1753442829248",
+      "id": 1753443707637,
       "username": "KevGamerX",
       "email": "kovacskevin0824@gmail.com",
       "password": "kkevin1414",
-      "createdAt": "2025-07-25T11:27:09.248Z"
+      "createdAt": "2025-07-25T11:41:47.637Z"
     }
   ]
 }
