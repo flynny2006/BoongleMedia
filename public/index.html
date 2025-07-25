@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoongleMedia - Social Media Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>BoongleMedia</h1>
+            </div>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#posting">Posting</a>
+                <a href="#community">Community</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="maintenance-badge">
+                    <span>🚧 Under Maintenance</span>
+                </div>
+                <h1>Welcome to BoongleMedia</h1>
+                <p class="hero-subtitle">Want to help us building this amazing social media platform?</p>
+                <p class="hero-bonus">You will also get free Premium Subscription!</p>
+                
+                <div class="join-team-section">
+                    <button id="joinTeamBtn" class="join-btn">Join Team</button>
+                    
+                    <div id="joinTeamModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h3>Join Our Team</h3>
+                            <p>Enter your email address, where we can contact you.</p>
+                            <form id="joinTeamForm">
+                                <input type="email" id="emailInput" placeholder="your@email.com" required>
+                                <button type="submit">Submit</button>
+                            </form>
+                            <div id="cooldownMessage" class="cooldown-message"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile First</h3>
+                    <p>Optimized for all devices with responsive design</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy Focused</h3>
+                    <p>Your data is secure with end-to-end encryption</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Real-time updates and instant messaging</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Customizable</h3>
+                    <p>Personalize your profile and feed experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Posting Section -->
+    <section id="posting" class="posting">
+        <div class="container">
+            <h2>Posting & Sharing</h2>
+            <div class="posting-content">
+                <div class="posting-text">
+                    <h3>Share Your World</h3>
+                    <ul>
+                        <li>📸 Photo & Video Posts</li>
+                        <li>📝 Text Updates</li>
+                        <li>🎵 Music & Audio</li>
+                        <li>📊 Polls & Surveys</li>
+                        <li>🔗 Link Sharing</li>
+                        <li>📍 Location Check-ins</li>
+                    </ul>
+                </div>
+                <div class="posting-preview">
+                    <div class="mock-post">
+                        <div class="post-header">
+                            <div class="avatar"></div>
+                            <div class="post-info">
+                                <h4>@ooiaa_cat_lower</h4>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Just joined BoongleMedia! Excited to be part of this amazing community 🚀</p>
+                        </div>
+                        <div class="post-actions">
+                            <button>❤️ Like</button>
+                            <button>💬 Comment</button>
+                            <button>🔄 Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2>Community</h2>
+            <div class="community-grid">
+                <div class="community-card">
+                    <h3>Groups</h3>
+                    <p>Join communities based on your interests</p>
+                </div>
+                <div class="community-card">
+                    <h3>Events</h3>
+                    <p>Discover and create events in your area</p>
+                </div>
+                <div class="community-card">
+                    <h3>Marketplace</h3>
+                    <p>Buy and sell items with your community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About BoongleMedia</h2>
+            <p>We're building the next generation social media platform that puts users first. Join us in creating a space where authentic connections thrive and creativity flourishes.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BoongleMedia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
