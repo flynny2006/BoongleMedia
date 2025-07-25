@@ -28,6 +28,10 @@ app.get('/app', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'app.html'));
 });
 
+app.get('/app.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'app.html'));
+});
+
 // Join team endpoint
 app.post('/api/join-team', (req, res) => {
     const { email } = req.body;
